@@ -34,15 +34,9 @@ apt_packages=(
 	"piper"
 	### Office
 	"pdfarranger"
-	"zathura"
-	"zathura-cb"
-	"zathura-djvu"
-	"zathura-ps"
 	### Programming
 	"git"
-	"fail2ban"
 	"neovim"
-	"emacs"
 	### Midia
 	"vlc"
 	"celluloid"

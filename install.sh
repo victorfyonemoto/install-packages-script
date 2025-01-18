@@ -59,16 +59,12 @@ flatpak_apps=(
     "org.inkscape.Inkscape"
     "org.gimp.GIMP"
     ### Utils
-    "com.github.ADBeveridge.Raider" # File Shredder
-    "com.rafaelmardojai.Blanket"     
+    "com.github.ADBeveridge.Raider" # File Shredder  
     "com.usebottles.bottles"    
     "io.github.jeffshee.Hidamari"
     "it.mijorus.gearlever"
     "org.qbittorrent.qBittorrent"
     "org.localsend.localsend_app"
-    "fr.romainvigier.MetadataCleaner"
-    "net.codelogistics.webapps"
-    "io.missioncenter.MissionCenter"
     "com.mattjakeman.ExtensionManager"
 )
 

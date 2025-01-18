@@ -41,6 +41,8 @@ apt_packages=(
 	### Compatibility
 	"wine"
 	"winetricks"
+	### Chat
+ 	"discord"
 )
 
 # Flatpak applications
@@ -77,7 +79,6 @@ snap_apps=(
 app_images=(
 	###	Programming
 	"https://github.com/usebruno/bruno/releases/download/v1.38.1/bruno_1.38.1_x86_64_linux.AppImage"
-	"https://stable.dl2.discordapp.net/apps/linux/0.0.80/discord-0.0.80.deb"
 )
 
 # Function to install APT packages

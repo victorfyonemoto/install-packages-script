@@ -9,9 +9,6 @@ fi
 # Ensure non-interactive apt installs (for automated environments)
 export DEBIAN_FRONTEND=noninteractive  # Ensures no prompts during package installation
 
-username=$(id -u -n 1000)
-builddir=$(pwd)
-
 # Log file
 LOG_FILE="/var/log/install_log.txt"
 exec > >(tee -i "$LOG_FILE")

@@ -24,4 +24,4 @@ After making sure the necessary changes have been made run the script
 
 Some steps require user confirmation, so be aware of this, if you want to avoid this, make changes to the script!
 
-Feel free to make suggestions for this repository
+Feel free to make pull requests or open issues for this repository

@@ -23,3 +23,5 @@ After making sure the necessary changes have been made run the script
 `sudo ./install.sh`
 
 Some steps require user confirmation, so be aware of this, if you want to avoid this, make changes to the script!
+
+Feel free to make suggestions for this repository

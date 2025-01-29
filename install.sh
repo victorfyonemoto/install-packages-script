@@ -175,14 +175,17 @@ download_appimages() {
 }
 
 # Main script execution
+# Update System
 echo "Updating System..."
 read -p "Proceed with system update and upgrade? (Y/n): " confirm
 confirm=${confirm:-y}
 if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
-    echo "Aborted."
-    exit 1
+    echo "Skipping system update."
+else
+    if ! apt update && apt upgrade -y; then
+        echo "System update failed, but proceeding with installations..."
+    fi
 fi
-apt update && apt upgrade -y
 
 # User confirmation
 read -p "Proceed to installations? (Y/n): " confirm

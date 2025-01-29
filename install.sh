@@ -176,17 +176,20 @@ download_appimages() {
 
 # Main script execution
 echo "Updating System..."
-read -p "Proceed with system update and upgrade? (y/n): " confirm
-if [[ "$confirm" != "y" ]]; then
+read -p "Proceed with system update and upgrade? (Y/n): " confirm
+confirm=${confirm:-y}
+if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
     echo "Aborted."
     exit 1
 fi
 apt update && apt upgrade -y
+
 # User confirmation
-read -p "Proceed to installations? (y/n): " confirm
-if [[ "$confirm" != "y" ]]; then
-	echo "Installation aborted."
-	exit 1
+read -p "Proceed to installations? (Y/n): " confirm
+confirm=${confirm:-y}
+if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
+    echo "Installation aborted."
+    exit 1
 fi
 
 # Calling functions

@@ -1,6 +1,6 @@
 # Packages Install Script
 
-This is a template script that automates the process of installing applications/packages, flatpaks and snaps on Debian/Ubuntu based system. Be aware for possible dependencies.
+This is a template script that automates the process of installing applications/packages, flatpaks and snaps. Choose the folder that matches you system base. Be aware for possible dependencies.
 
 ### Usage
 
@@ -9,6 +9,10 @@ This is a template script that automates the process of installing applications/
 `git clone https://github.com/victorfyonemoto/install-script.git`
 
 Make sure to edit the script, add or remove any packages necessary.
+
+####  Example debian-base system
+
+`cd debian-base/`
 
 #### Change file permissions
 

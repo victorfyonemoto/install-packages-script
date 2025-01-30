@@ -1,4 +1,4 @@
-# Packages Install Script
+# Install Packages Script
 
 This is a template script that automates the process of installing applications/packages, flatpaks and snaps. Choose the folder that matches your system base. Be aware for possible dependencies.
 

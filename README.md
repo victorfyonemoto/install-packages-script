@@ -1,8 +1,6 @@
-# Install Script for Debian/Ubuntu
+# Packages Install Script
 
-## Install script for Debian/Ubuntu base distros.
-
-This is a template script automates the process of installing applications/packages, flatpaks and snaps on a Debian or Ubuntu based system. Be aware for possible dependencies.
+This is a template script that automates the process of installing applications/packages, flatpaks and snaps on Debian/Ubuntu based system. Be aware for possible dependencies.
 
 ### Usage
 
@@ -10,13 +8,13 @@ This is a template script automates the process of installing applications/packa
 
 `git clone https://github.com/victorfyonemoto/install-script.git`
 
-Make sure to edit the script and add or remove any packages necessary
+Make sure to edit the script, add or remove any packages necessary.
 
 #### Change file permissions
 
 `chmod +x install.sh`
 
-After making sure the necessary changes have been made run the script
+After making sure the necessary changes have been made run the script.
 
 #### Run the script with sudo!
 

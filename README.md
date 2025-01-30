@@ -12,7 +12,7 @@ Make sure to edit the script, add or remove any packages necessary.
 
 ####  Example debian-base system
 
-`cd debian-base/`
+`cd install-script/debian-base/`
 
 #### Change file permissions
 

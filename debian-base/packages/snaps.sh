@@ -29,6 +29,23 @@ install_snaps() {
 		systemctl enable --now snapd.socket
 	fi
 	
+	# Wait for snapd to be seeded (initializing)
+	echo "Waiting for snapd to be fully initialized..."
+	for i in {1..60}; do  # Wait up to 60 seconds
+		if snap list &>/dev/null; then
+			echo "Snapd is ready."
+			break
+		fi
+		echo "Waiting for Snapd to initialize... ($i/60)"
+		sleep 1
+	done
+
+	# If snapd initialization failed
+	if ! snap list &>/dev/null; then
+		echo "Snapd initialization failed. Skipping Snap apps installation."
+		return
+	fi
+	
 	echo "Installing Snaps..."
 	for snap in "${snap_apps[@]}"; do
 		echo "===== Installing $snap... ====="

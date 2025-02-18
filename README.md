@@ -10,9 +10,9 @@ This is a template script that automates the process of installing applications/
 
 Make sure to edit the script, add or remove any packages necessary.
 
-####  Example debian-base system
+####  cd into the script directory
 
-`cd install-script/debian-base/`
+`cd  install-packages-script/`
 
 #### Change file permissions
 

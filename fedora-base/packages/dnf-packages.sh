@@ -3,7 +3,6 @@
 # Packages
 dnf_packages=(
 	### System
-	"synaptic"
 	"timeshift"
 	### Utils
 	"gzip"

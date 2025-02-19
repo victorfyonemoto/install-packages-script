@@ -103,7 +103,7 @@ done
 git config --list
 
 # Cleanup
-echo "Cleaning up..."
+echo -e "\nCleaning up..."
 #dnf autoremove -y
 #dnf clean
 

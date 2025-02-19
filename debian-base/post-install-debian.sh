@@ -112,7 +112,7 @@ done
 git config --list
 
 # Cleanup
-echo "Cleaning up..."
+echo -e "\nCleaning up..."
 apt autoremove -y
 apt clean
 

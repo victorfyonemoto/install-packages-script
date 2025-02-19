@@ -77,6 +77,31 @@ curl -sS https://starship.rs/install.sh | sh
 # NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
+echo -e "\nSetting up git configs..."
+
+# Prompt the user for Git user details
+read -p "Enter your Git user name (e.g., John Doe): " GIT_USER_NAME
+read -p "Enter your Git email (e.g., test@email.com): " GIT_USER_EMAIL
+read -p "Enter your default Git branch (e.g., main): " GIT_DEFAULT_BRANCH
+read -p "Enter your preferred Git editor (e.g., vim): " GIT_EDITOR
+
+# List of configurations to set
+declare -A git_configs=(
+    ["user.name"]="$GIT_USER_NAME"
+    ["user.email"]="$GIT_USER_EMAIL"
+    ["init.defaultBranch"]="$GIT_DEFAULT_BRANCH"
+    ["core.editor"]="$GIT_EDITOR"
+    ["color.ui"]="auto"
+)
+
+# Apply configurations using a loop
+for config in "${!git_configs[@]}"; do
+    git config --global "$config" "${git_configs[$config]}"
+done
+
+# Verify the applied git configs
+git config --list
+
 # Cleanup
 echo "Cleaning up..."
 #dnf autoremove -y

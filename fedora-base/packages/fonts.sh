@@ -64,6 +64,8 @@ download_and_install_font() {
 	rm -rf "$family_dir"
 }
 
+echo -e "\nDownloading and installing fonts..."
+
 # Loop through each URL and download & install the fonts
 for url in "${NerdFontUrls[@]}"; do
     download_and_install_font "$url" || { echo "Error installing font $url"; exit 1; }

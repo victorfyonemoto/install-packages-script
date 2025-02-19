@@ -1,6 +1,6 @@
 # Install Packages Script
 
-This is a template script that automates the process of installing applications/packages, flatpaks and snaps. When running the script, choose the base distribution of your operating system. Be aware for possible dependencies.
+This is a template script that automates the process of installing applications/packages, flatpaks and snaps. During the script execution choose the base distro of your OS. Be aware for possible dependencies.
 
 ### Usage
 

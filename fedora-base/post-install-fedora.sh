@@ -104,8 +104,7 @@ git config --list
 
 # Cleanup
 echo -e "\nCleaning up..."
-#dnf autoremove -y
-#dnf clean
+dnf clean all
 
 echo -e "\nAll installations are complete."
 # Log File
